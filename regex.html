@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="text/javascript">
-    
+        let flattened = [
+            [0, 1],
+            [2, 3],
+            [4, 5]
+        ].reduce(function(acc, cur) {
+            //console.log(acc);
+            //console.log(cur);
+            return acc.concat(cur);
+        }, []);
+
+        console.log(flattened);
+        console.log(Math.max(1, 2, 3)); // [0, 1, 2, 3, 4, 5]
+
+        var temp = "1234567890".match(/\B(?=(\d{3})+(?!\d))/g);
+        console.log(temp);
+        console.log("1234567890".toString().replace(/\B(?=(\d{3})+(?!\d))/g));
     </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
