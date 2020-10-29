@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=11">
     <title>Document</title>
     <script type="text/javascript">
         let flattened = [
@@ -12,7 +13,6 @@
             [4, 5]
         ].reduce(function(acc, cur) {
             //console.log(acc);
-            console.log(`cur=>${cur}`);
             return acc.concat(cur);
         }, []);
 
